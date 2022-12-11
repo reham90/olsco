@@ -18,7 +18,7 @@ body {
     color: #808080 !important;
   }
   .cats-dispaly .cat-li:after{
-    background-color: #fff !important;
+    background-color: #e5e5e5 !important;
   }
  
 
@@ -423,7 +423,7 @@ width: 0;
     left: 0;
     right: 0;
     transform: translateX(0);
-    background-color: transparent;
+    background-color: #fff;
   }
   html[dir="rtl"] .cats-dispaly,
   html[dir="ltr"] .cats-dispaly {
@@ -729,7 +729,7 @@ html[dir="rtl"] .open-search {
   font-weight: 700;
 }
 html[dir="ltr"] .caption-title{
-  font-size: 35px;
+  font-size: 24px;
 }
 .caption-pargh {
   font-weight: 500;
@@ -908,7 +908,7 @@ html[dir="ltr"] .caption-title{
   font-weight: bold;
 }
 .feature-block p{
-  font-size: 18px;
+  font-size: 16px;
   color: #000;
   margin: 0;
 }
@@ -1110,7 +1110,7 @@ html[dir="ltr"] .caption-title{
 }
 .cover-2 p{
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   margin: 0;
   font-weight: 300;
   display: block;
@@ -1167,6 +1167,7 @@ html[dir="ltr"] .caption-title{
   }
   .services-box{
     margin-bottom: 15px;
+    margin-bottom: 0;
   }
   .fot-logo-2{
     position: absolute;
@@ -1366,13 +1367,13 @@ footer {
     transition: all 0.3s ease-in-out;
 }
 .newsletter-cont button i{
-  font-size: 14px;
+  font-size: 24px;
   color: var(--main-color);
 }
 .nav-foot-li .nav-foot-link:hover {
   /* transform: translateX(6px); */
-  color:#fff;
-  border-bottom: 1px solid #fff;
+  color:var(--main-hover);
+  
 }
 .fot-logo-1 img{
   max-width: 51px;
@@ -1384,7 +1385,7 @@ footer {
 }
 html[dir="rtl"] .nav-foot-li .nav-foot-link:hover {
   /* transform: translateX(-6px); */
-  border-bottom: 1px solid #fff;
+  
 }
 .social{
   display: block;
@@ -1820,34 +1821,20 @@ html[dir="rtl"] .footer-accordion.active:after {
 @media (max-width: 991px) {
 
 
-  .fixed-search{
-    display: flex;
-  }
-  /* .close-search {
-    z-index: 99;
-  } */
-  .search-section {
-    margin: 0;
-    position: absolute;
-    top: -100px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    z-index: 99;
-    transition: all 0.3s ease-in-out;
-  }
-  .search-input:focus {
-    border-color: var(--main-hover);
-  }
-  .search-input:focus {
-    border-color: var(--main-color);
-  }
-  .search-button {
-    color: var(--white-color);
-  }
-  .search-open {
-    top: 100px;
-  }
+ 
+ .features-blocks{
+  grid-gap: 20px;
+ }
+ .hamburger-lines .line{
+  background-color: #fff;
+ }
+ .open-bars .hamburger-lines .line1{
+  background-color: #808080;
+ }
+ .open-bars .hamburger-lines .line3{
+  background-color: #808080;
+ }
+ 
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .nav-header .img-logo img {
